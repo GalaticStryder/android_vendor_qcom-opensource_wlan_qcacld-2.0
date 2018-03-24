@@ -3,7 +3,7 @@ comment "Qualcomm Atheros CLD WLAN module"
 config QCA_CLD_WLAN
 
 	tristate "Qualcomm Atheros CLD WLAN module"
-	default n
+	default y
 	help
 	Add support for the Qualcomm Atheros CLD WLAN module
 
@@ -11,44 +11,44 @@ if QCA_CLD_WLAN != n
 
 config QCACLD_WLAN_LFR3
 	bool "Enable the WLAN Legacy Fast Roaming feature Version 3"
-	default n
+	default y
 
 config PRIMA_WLAN_OKC
 	bool "Enable the Prima WLAN Opportunistic Key Caching feature"
-	default n
+	default y
 
 config PRIMA_WLAN_11AC_HIGH_TP
 	bool "Enable the Prima WLAN 802.11ac High Throughput option (depends upon kernel support)"
-	default n
+	default y
 
 config WLAN_FEATURE_11W
 	bool "Enable the WLAN 802.11w Protected Management Frames feature"
-	default n
+	default y
 
 config WLAN_FEATURE_LPSS
 	bool "Enable the WLAN LPSS feature"
-	default n
+	default y
 
 config QCOM_VOWIFI_11R
 	bool "Enable Fast Transition (11r) feature"
-	default n
+	default y
 
 config WLAN_FEATURE_NAN
 	bool "Enable NAN feature"
-	default n
+	default y
 
 config WLAN_FEATURE_NAN_DATAPATH
 	bool "Enable NaN Data Path feature"
 	depends on WLAN_FEATURE_NAN
-	default n
+	default y
 
 config QCOM_TDLS
 	bool "Enable TDLS feature"
-	default n
+	default y
 
 config QCOM_LTE_COEX
 	bool "Enable QCOM LTE Coex feature"
-	default n
+	default y
 
 config WLAN_SYNC_TSF
 	bool "Enable QCOM sync multi devices tsf feature"
@@ -57,11 +57,11 @@ config WLAN_SYNC_TSF
 
 config WLAN_OFFLOAD_PACKETS
 	bool "Enable offload packets feature"
-	default n
+	default y
 
 config QCA_WIFI_AUTOMOTIVE_CONC
 	bool "Enable 3 port concurrency feature"
-	default n
+	default y
 
 config WLAN_UDP_RESPONSE_OFFLOAD
 	bool "Enable UDP response offload feature"
